@@ -1,0 +1,3 @@
+﻿Datenbank: thetestdb
+nutzer: bes
+pw: test_bes
