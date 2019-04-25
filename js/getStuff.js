@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	$("#getBtn").click(function(){
+	$("#getDemoBtn").click(function(){
 		$("#demo").load("js/demo.txt");
 	});
 
