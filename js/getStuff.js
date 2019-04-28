@@ -13,5 +13,9 @@ $(document).ready(function(){
 		    	json.age + " years old.");
 		});
 	});
+
+	$("#dbAction").click(function(){
+		$("#demo").load("php/db_action.php");
+	});
 	
 });
