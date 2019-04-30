@@ -1,7 +1,4 @@
 
-<html>
-<body>
-	
 <?php
 
 	// Verbindung aufnehmen
@@ -20,7 +17,7 @@ if ($conn->connect_error) {
 }
 // echo "Connected successfully";
 
-$sql = "SELECT * FROM tabl_01";
+$sql = "SELECT * FROM tabl_01 WHERE Info = \"Dr. Detzlhofer\"";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -37,7 +34,3 @@ $conn->close();
 ?>
 
 
-
-
-</body>
-</html>
