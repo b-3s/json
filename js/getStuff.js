@@ -24,17 +24,17 @@ $(document).ready(function(){
 		$("#loadedDbStuff").load("php/db_action.php");
 	});
 
-	let numby;
+	
 	// add content to database
 	$("#setDbAction").click(function(){
+		let numby;
 		numby = $("#nr").val();
-		// alert(numby);
 		$.ajax({
 	      url: 'php/db_add_action.php',
 	      type: 'post',
 	      data: {'numby': numby},
 	      success: function(data, status) {
-	        if(status == "200") {
+	        if(this.status == 200) {
 	          
 	          console.log(status);
 	        }
@@ -46,5 +46,16 @@ $(document).ready(function(){
 	    }); // end ajax call
 
 	});
+
+
+
+	//create new Database
+	$("#createNewDBAction").click(function() {
+		$.ajax({
+			url: 'php/create_db.php',
+		});
+	});
 	
 });
+
+

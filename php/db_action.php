@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 }
 // echo "Connected successfully";
 
-$sql = "SELECT * FROM tabl_01 WHERE Info = \"Dr. Detzlhofer\"";
+$sql = "SELECT * FROM tabl_01";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
