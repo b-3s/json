@@ -27,12 +27,12 @@ $(document).ready(function(){
 	
 	// add content to database
 	$("#setDbAction").click(function(){
-		let numby;
-		numby = $("#nr").val();
+		let number;
+		number = $("#nr").val();
 		$.ajax({
 	      url: 'php/db_add_action.php',
 	      type: 'post',
-	      data: {'numby': numby},
+	      data: {'numby': number},
 	      success: function(data, status) {
 	        if(this.status == 200) {
 	          
